@@ -1,0 +1,55 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"pm-hdr-1\",\"type\":\"header\",\"data\":{\"text\":\"Procurement\",\"col\":12}},{\"id\":\"pm-sc-1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Sauda Requisition\",\"col\":3}},{\"id\":\"pm-sc-2\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Order\",\"col\":3}},{\"id\":\"pm-sc-3\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Warehouse Receiving\",\"col\":3}},{\"id\":\"pm-sc-4\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Purchase Receipt\",\"col\":3}}]",
+ "creation": "2026-07-23 00:00:00.000000",
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "is_hidden": 0,
+ "label": "Procurement Management",
+ "modified": "2026-07-23 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Procurement Management",
+ "name": "Procurement Management",
+ "owner": "Administrator",
+ "public": 1,
+ "roles": [
+  { "role": "Procurement Executive" },
+  { "role": "Sourcing Head" },
+  { "role": "Warehouse Executive" },
+  { "role": "MIS Executive" },
+  { "role": "System Manager" }
+ ],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "format": "{} Open",
+   "label": "Sauda Requisition",
+   "link_to": "Sauda Requisition",
+   "stats_filter": "{}",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "format": "{} Open",
+   "label": "Purchase Order",
+   "link_to": "Purchase Order",
+   "stats_filter": "{\"docstatus\": 1}",
+   "type": "DocType"
+  },
+  {
+   "label": "Warehouse Receiving",
+   "link_to": "warehouse-receiving",
+   "type": "Page"
+  },
+  {
+   "color": "Orange",
+   "format": "{} Open",
+   "label": "Purchase Receipt",
+   "link_to": "Purchase Receipt",
+   "stats_filter": "{\"docstatus\": 1}",
+   "type": "DocType"
+  }
+ ],
+ "title": "Procurement Management"
+}
