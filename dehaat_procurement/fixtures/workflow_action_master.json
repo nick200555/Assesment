@@ -1,7 +1,27 @@
 [
-  { "doctype": "Workflow Action Master", "name": "Submit" },
-  { "doctype": "Workflow Action Master", "name": "Approve" },
-  { "doctype": "Workflow Action Master", "name": "Reject" },
-  { "doctype": "Workflow Action Master", "name": "Create Purchase Order" },
-  { "doctype": "Workflow Action Master", "name": "Complete GRN" }
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Submit",
+    "workflow_action_name": "Submit"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Approve",
+    "workflow_action_name": "Approve"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Reject",
+    "workflow_action_name": "Reject"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Create Purchase Order",
+    "workflow_action_name": "Create Purchase Order"
+  },
+  {
+    "doctype": "Workflow Action Master",
+    "name": "Complete GRN",
+    "workflow_action_name": "Complete GRN"
+  }
 ]
