@@ -1,1 +1,2 @@
-frappe
+# Additional Python dependencies for dehaat_procurement
+# (frappe and erpnext are managed by bench and listed in hooks.py required_apps)
