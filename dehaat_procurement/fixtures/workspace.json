@@ -1,0 +1,42 @@
+[
+  {
+    "doctype": "Workspace",
+    "name": "Procurement Management",
+    "label": "Procurement Management",
+    "category": "Modules",
+    "is_standard": 1,
+    "module": "Procurement Management",
+    "icon": "procurement",
+    "public": 1,
+    "title": "Procurement Management",
+    "roles": [
+      { "role": "Procurement Executive" },
+      { "role": "Sourcing Head" },
+      { "role": "Warehouse Executive" },
+      { "role": "MIS Executive" },
+      { "role": "System Manager" }
+    ],
+    "shortcuts": [
+      {
+        "type": "DocType",
+        "link_to": "Sauda Requisition",
+        "label": "Sauda Requisitions"
+      },
+      {
+        "type": "DocType",
+        "link_to": "Purchase Order",
+        "label": "Purchase Orders"
+      },
+      {
+        "type": "Page",
+        "link_to": "warehouse-receiving",
+        "label": "Warehouse Receiving"
+      },
+      {
+        "type": "DocType",
+        "link_to": "Purchase Receipt",
+        "label": "Purchase Receipts (GRN)"
+      }
+    ]
+  }
+]

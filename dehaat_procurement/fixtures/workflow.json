@@ -1,0 +1,96 @@
+[
+  {
+    "doctype": "Workflow",
+    "name": "Sauda Requisition Workflow",
+    "document_type": "Sauda Requisition",
+    "workflow_name": "Sauda Requisition Workflow",
+    "is_active": 1,
+    "send_email_alert": 0,
+    "states": [
+      {
+        "state": "Draft",
+        "doc_status": "0",
+        "allow_edit": "Procurement Executive",
+        "is_optional_state": 0,
+        "message": "Requisition is in Draft. Add items and submit for approval."
+      },
+      {
+        "state": "Pending Approval",
+        "doc_status": "0",
+        "allow_edit": "Sourcing Head",
+        "is_optional_state": 0,
+        "message": "Awaiting Sourcing Head approval."
+      },
+      {
+        "state": "Approved",
+        "doc_status": "0",
+        "allow_edit": "MIS Executive",
+        "is_optional_state": 0,
+        "message": "Requisition approved. MIS Executive can create Purchase Order."
+      },
+      {
+        "state": "Rejected",
+        "doc_status": "0",
+        "allow_edit": "Sourcing Head",
+        "is_optional_state": 0,
+        "message": "Requisition rejected."
+      },
+      {
+        "state": "PO Created",
+        "doc_status": "0",
+        "allow_edit": "Warehouse Executive",
+        "is_optional_state": 0,
+        "message": "Purchase Order created. Awaiting warehouse receiving."
+      },
+      {
+        "state": "Completed",
+        "doc_status": "0",
+        "allow_edit": "",
+        "is_optional_state": 0,
+        "message": "Goods Receipt completed. Requisition closed."
+      }
+    ],
+    "transitions": [
+      {
+        "state": "Draft",
+        "action": "Submit",
+        "next_state": "Pending Approval",
+        "allowed": "Procurement Executive",
+        "allow_self_approval": 0,
+        "condition": ""
+      },
+      {
+        "state": "Pending Approval",
+        "action": "Approve",
+        "next_state": "Approved",
+        "allowed": "Sourcing Head",
+        "allow_self_approval": 0,
+        "condition": ""
+      },
+      {
+        "state": "Pending Approval",
+        "action": "Reject",
+        "next_state": "Rejected",
+        "allowed": "Sourcing Head",
+        "allow_self_approval": 0,
+        "condition": ""
+      },
+      {
+        "state": "Approved",
+        "action": "Create Purchase Order",
+        "next_state": "PO Created",
+        "allowed": "MIS Executive",
+        "allow_self_approval": 1,
+        "condition": ""
+      },
+      {
+        "state": "PO Created",
+        "action": "Complete GRN",
+        "next_state": "Completed",
+        "allowed": "Warehouse Executive",
+        "allow_self_approval": 1,
+        "condition": ""
+      }
+    ]
+  }
+]

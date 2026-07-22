@@ -1,0 +1,14 @@
+{
+ "creation": "2026-07-22 00:00:00.000000",
+ "doctype": "Page",
+ "module": "Procurement Management",
+ "name": "warehouse-receiving",
+ "page_name": "warehouse-receiving",
+ "standard": "Yes",
+ "title": "Warehouse Receiving",
+ "roles": [
+  { "role": "Warehouse Executive" },
+  { "role": "System Manager" },
+  { "role": "MIS Executive" }
+ ]
+}

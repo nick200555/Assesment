@@ -1,0 +1,18 @@
+[
+  {
+    "doctype": "Custom Field",
+    "name": "Purchase Order-custom_sauda_requisition",
+    "dt": "Purchase Order",
+    "module": "Procurement Management",
+    "label": "Sauda Requisition",
+    "fieldname": "custom_sauda_requisition",
+    "fieldtype": "Link",
+    "options": "Sauda Requisition",
+    "insert_after": "supplier",
+    "read_only": 1,
+    "in_list_view": 0,
+    "in_standard_filter": 1,
+    "description": "Linked Sauda Requisition that originated this Purchase Order",
+    "translatable": 0
+  }
+]

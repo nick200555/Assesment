@@ -1,0 +1,7 @@
+[
+  { "doctype": "Workflow Action Master", "name": "Submit" },
+  { "doctype": "Workflow Action Master", "name": "Approve" },
+  { "doctype": "Workflow Action Master", "name": "Reject" },
+  { "doctype": "Workflow Action Master", "name": "Create Purchase Order" },
+  { "doctype": "Workflow Action Master", "name": "Complete GRN" }
+]

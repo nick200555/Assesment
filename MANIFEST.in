@@ -1,0 +1,3 @@
+include MANIFEST.in
+include requirements.txt
+recursive-include dehaat_procurement *.json *.js *.css *.html *.md *.txt

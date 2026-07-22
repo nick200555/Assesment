@@ -1,0 +1,244 @@
+/* ────────────────────────────────────────────────────────────────────────────
+   Warehouse Receiving Page — Styles
+   Copyright (c) 2026, DeHaat Engineering
+   ──────────────────────────────────────────────────────────────────────────── */
+
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+.wr-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    font-family: var(--font-stack, 'Inter', sans-serif);
+}
+
+.wr-card {
+    background: var(--card-bg, #fff);
+    border: 1px solid var(--border-color, #e0e0e0);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.06);
+    overflow: hidden;
+}
+
+.wr-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 20px;
+    background: var(--subtle-bg, #f8f9fa);
+    border-bottom: 1px solid var(--border-color, #e0e0e0);
+}
+
+.wr-card-header h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-color, #333);
+}
+
+.wr-icon { font-size: 20px; }
+.wr-hint {
+    margin-left: auto;
+    font-size: 12px;
+    color: var(--text-muted, #888);
+    font-style: italic;
+}
+
+.wr-card-body { padding: 16px 20px; }
+
+/* ── Rows & Fields ───────────────────────────────────────────────────────── */
+.wr-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.wr-scan-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+    align-items: flex-end;
+}
+
+.wr-field-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 140px;
+}
+
+.wr-field-group label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted, #666);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.wr-readonly-val {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color, #333);
+    padding: 8px 0;
+    border-bottom: 2px solid var(--border-color, #e0e0e0);
+    min-height: 34px;
+}
+
+/* ── Inputs ─────────────────────────────────────────────────────────────── */
+.wr-input {
+    border: 1px solid var(--border-color, #d0d0d0);
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color .2s;
+    background: var(--input-bg, #fff);
+    color: var(--text-color, #333);
+}
+
+.wr-input:focus {
+    outline: none;
+    border-color: var(--primary, #5e64ff);
+    box-shadow: 0 0 0 3px rgba(94, 100, 255, .15);
+}
+
+.wr-barcode {
+    font-size: 16px;
+    padding: 10px 14px;
+    font-family: monospace;
+    letter-spacing: 1px;
+    border: 2px solid var(--primary, #5e64ff);
+}
+
+/* ── Required marker ─────────────────────────────────────────────────────── */
+.wr-required { color: var(--red, #e74c3c); }
+
+/* ── Highlight value ─────────────────────────────────────────────────────── */
+.wr-highlight {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--primary, #5e64ff) !important;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────────────── */
+.wr-btn {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity .15s, transform .1s;
+}
+
+.wr-btn:hover { opacity: .88; transform: translateY(-1px); }
+.wr-btn:active { transform: translateY(0); }
+
+.wr-btn-primary  { background: var(--primary, #5e64ff); color: #fff; }
+.wr-btn-secondary{ background: var(--subtle-bg, #e0e0e0); color: var(--text-color, #333); }
+.wr-btn-success  { background: #28a745; color: #fff; font-size: 14px; padding: 10px 24px; }
+.wr-btn-danger   { background: var(--red, #e74c3c); color: #fff; padding: 4px 10px; font-size: 11px; }
+
+.wr-scan-actions { display: flex; gap: 10px; margin-top: 8px; }
+.wr-grn-actions  { display: flex; justify-content: flex-end; margin-top: 16px; }
+
+/* ── Table ───────────────────────────────────────────────────────────────── */
+.wr-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.wr-table thead th {
+    background: var(--subtle-bg, #f0f0f0);
+    padding: 8px 10px;
+    text-align: left;
+    font-weight: 600;
+    color: var(--text-muted, #555);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--border-color, #e0e0e0);
+}
+
+.wr-table tbody td {
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border-color, #f0f0f0);
+    color: var(--text-color, #333);
+}
+
+.wr-table tbody tr:hover { background: var(--subtle-bg, #fafafa); }
+.wr-row-done td { color: var(--text-muted, #aaa); text-decoration: line-through; }
+
+/* ── Progress Bar ────────────────────────────────────────────────────────── */
+.wr-progress-bar {
+    position: relative;
+    background: var(--border-color, #e0e0e0);
+    border-radius: 10px;
+    height: 18px;
+    overflow: hidden;
+    min-width: 80px;
+}
+
+.wr-progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width .4s ease;
+}
+
+.wr-progress-bar span {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0,0,0,.4);
+}
+
+/* ── Status Badge ────────────────────────────────────────────────────────── */
+.wr-status-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.wr-status-to-receive-and-bill { background: #fff3cd; color: #856404; }
+.wr-status-to-receive           { background: #cce5ff; color: #004085; }
+.wr-status-completed            { background: #d4edda; color: #155724; }
+.wr-status-closed               { background: #e2e3e5; color: #383d41; }
+
+/* ── Badges ─────────────────────────────────────────────────────────────── */
+.wr-badge-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.wr-badge {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.wr-badge-blue   { background: #cce5ff; color: #004085; }
+.wr-badge-green  { background: #d4edda; color: #155724; }
+.wr-badge-orange { background: #fff3cd; color: #856404; }
+
+/* ── Info Banner ─────────────────────────────────────────────────────────── */
+.wr-info-banner {
+    background: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-radius: 6px;
+    padding: 12px 16px;
+    color: #0c5460;
+    font-size: 13px;
+    margin-top: 8px;
+}

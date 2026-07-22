@@ -1,0 +1,2 @@
+# Patches file — add migration patches here as:
+# dehaat_procurement.patches.v1_0.initial_setup
