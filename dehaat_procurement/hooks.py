@@ -37,7 +37,9 @@ fixtures = [
         "Complete GRN"
     ]]]},
     {"dt": "Custom Field", "filters": [["module", "=", "Procurement Management"]]},
-    {"dt": "Workspace", "filters": [["name", "=", "Procurement Management"]]},
+    # Note: Workspace fixture removed — Frappe v15 Workspace requires a complex
+    # block-editor 'content' JSON field that must be created via the Frappe UI.
+    # Create the Procurement Management workspace manually after installation.
 ]
 
 # ─── DocType Class Overrides ───────────────────────────────────────────────────
